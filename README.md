@@ -4,24 +4,24 @@
  
  
 ### Home page
-![1](img\ReadMe\1.png)
+![1](img/ReadMe/1.png)
 
 
 
 ### Contents
-![2](img\ReadMe\2.png)
+![2](img/ReadMe/2.png)
 
 
 
 ### Item Adding to Chart
-![3](img\ReadMe\3.png)
+![3](img/ReadMe/3.png)
 
 
 
 ### Ordered List page
-![4](img\ReadMe\4.png)
+![4](img/ReadMe/4.png)
 
 
 
 ### Order confirm page
-![5](img\ReadMe\5.png)
+![5](img/ReadMe/5.png)
