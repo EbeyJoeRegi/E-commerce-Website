@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessories | ShopVoyage</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/content.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        #mainContainer {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+
+        <h1> Accessories</h1>
+        <div id="containerClothing">
+            <div class="mainimg">
+                <a data-fancybox="gallery-5" data-options='{"buttons": [], "infobar": false}' href="img/content/Accessories/Set1/img1.jpg" alt="Fitness">
+                    <img src="img/content/Accessories/Set1/img1.jpg" alt="Fitness" style="width: 38.7%; height: auto;" />
+                </a>                
+                <h4>Samsung Galaxy Watch6 <br>classic LTE<br>₹48999</h4>
+                <button class="button" data-productid="4">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <a data-fancybox="gallery-5" href="img/content/Accessories/Set1/img2.jpg" alt="jQueryScript.Net"></a>
+                <a data-fancybox="gallery-5" href="img/content/Accessories/Set1/img3.jpg" alt="Girls"></a>
+                <a data-fancybox="gallery-5" href="img/content/Accessories/Set1/img4.jpg" alt="Fashion"></a>
+            </div>
+            <div class="mainimg">
+                <a data-fancybox="gallery-6" data-options='{"buttons": [], "infobar": false}' href="img/content/Accessories/Set3/img1.jpg" alt="Fitness">
+                    <img src="img/content/Accessories/Set3/img1.jpg" alt="Fitness" />
+                </a>
+                <h4>OnePlus Nord Buds 2r True <br>Wireless in Ear Earbuds<br>₹1499</h4>
+                <button class="button" data-productid="1">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <a data-fancybox="gallery-6" href="img/content/Accessories/Set3/img2.jpg" alt="jQueryScript.Net"></a>
+                <a data-fancybox="gallery-6" href="img/content/Accessories/Set3/img3.jpg" alt="Girls"></a>
+                <a data-fancybox="gallery-6" href="img/content/Accessories/Set3/img4.jpg" alt="Fashion"></a>
+            </div>
+            <div class="mainimg">
+                <a data-fancybox="gallery-7" data-options='{"buttons": [], "infobar": false}' href="img/content/Accessories/Set2/img1.jpg" alt="Fitness">
+                    <img src="img/content/Accessories/Set2/img1.jpg" alt="Fitness" />
+                </a>
+                <h4>Samsung Galaxy S23 5G<br>Green, 8GB, 128GB Storage<br>₹65999</h4>
+                <button class="button" data-productid="2">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <a data-fancybox="gallery-7" href="img/content/Accessories/Set2/img2.jpg" alt="jQueryScript.Net"></a>
+                <a data-fancybox="gallery-7" href="img/content/Accessories/Set2/img3.jpg" alt="Girls"></a>
+                <a data-fancybox="gallery-7" href="img/content/Accessories/Set2/img4.jpg" alt="Fashion"></a>
+            </div>
+            <div class="mainimg">
+                <a data-fancybox="gallery-8" data-options='{"buttons": [], "infobar": false}' href="img/content/Accessories/Set4/img1.jpg" alt="Fitness">
+                    <img src="img/content/Accessories/Set4/img1.jpg" alt="Fitness" />
+                </a>
+                <h4>Marshall Stanmore II Wireless <br>luetooth Speaker (Black)<br>₹24999</h4>
+                <button class="button" data-productid="3">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <a data-fancybox="gallery-8" href="img/content/Accessories/Set4/img2.jpg" alt="jQueryScript.Net"></a>
+                <a data-fancybox="gallery-8" href="img/content/Accessories/Set4/img3.jpg" alt="Girls"></a>
+                <a data-fancybox="gallery-8" href="img/content/Accessories/Set4/img4.jpg" alt="Fashion"></a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+    // Initialize Fancybox
+    $(document).ready(function() {
+    $('[data-fancybox^="gallery-"]').fancybox({
+        afterShow: function(instance, current) {
+            // Add custom CSS to position navigation buttons on the image
+            $('.fancybox-navigation').appendTo(current.$content);
+        },
+        beforeShow: function(instance, current) {
+            // Add custom CSS to change layout
+            $('.fancybox-slide--current .fancybox-content').css({
+                display: 'flex',
+                flexDirection: 'row'
+            });
+        }
+    });
+});
+
+</script>
+</html>
